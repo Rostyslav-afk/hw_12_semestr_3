@@ -76,3 +76,34 @@ const findBestEmployee = function(employees){
     
 };
 console.log(findBestEmployee(employeers));
+
+//#4 Напиши функцію countTotalSalary(employees) приймаючу об'єкт зарплат. Функція рахує загальну суму зарплати працівників і повертає її. Кожне поле об'єкта, переданого в функцію, має вигляд "ім'я":"зарплата".
+console.log("4 Завдання");
+
+const salary = {
+    interno: 400,
+    trainee: 400,
+    junior: 950,
+    middle: 2350,
+    senior: 4500,
+    teamLead: 4275,
+    techLead: 5700,
+    staff: 6750,
+}
+
+const countTotalSalary = function(employees){
+    let total = 0;
+    for (let salary in employees){
+        total += employees[salary];
+    }
+    return `Загальна сума зарплат дорівнює ${total}$`
+};
+
+console.log(countTotalSalary(salary));
+
+//#5 Напиши функцію getAllPropValues(arr, prop), яка отримує масив об'єктів і ім'я властивості. Повертає масив значень певної властивості prop з кожного об'єкта в масиві.
+console.log("5 Завдання");
+
+const getAllPropValues = function(arr, prop){
+    let result = []
+};
